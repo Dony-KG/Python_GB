@@ -1,9 +1,9 @@
 # Дана последовательность из N целых чисел и число K. Необходимо сдвинуть всю последовательность (сдвиг - циклический)
 # на K элементов вправо, K – положительное число.
 
-length = int(input("Введите длинну списка: "))
+length = int(input("Введите длину списка: "))
 my_list = [i for i in range(length)]
 
 shift = int(input("на сколько нужно сдвинуть список: "))
 
-print(*my_list[shift:], *my_list[0:shift])
+print(*my_list[-shift:], *my_list[0:-shift])
