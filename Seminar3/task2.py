@@ -3,11 +3,11 @@
 
 import random
 
-my_list = [i for i in range(10)]
+my_list = [i for i in range(1,11)]
 print(my_list)
 my_set = set(my_list)
 
-my_list.pop(random.randint(0, 9))
+my_list.pop(random.randint(1, 10))
 
 random.shuffle(my_list)
 print(my_list)
