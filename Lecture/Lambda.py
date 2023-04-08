@@ -8,7 +8,7 @@ def mat(op, x):
 
 # mat(calc1, 5)
 
-mat(lambda a: a + a, 5)
+print((lambda a, b:a + b)(5, 7))
 
 def calc2(a):
     return a*a
